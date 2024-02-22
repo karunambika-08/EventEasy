@@ -1,0 +1,277 @@
+/* 
+  primary color : 0061AF;
+  secondary color : 1363AA;
+  light color : 	#c8d9ed
+  dark color :	#4663ac
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300;400&family=Protest+Riot&family=Rubik+Burned&family=Single+Day&display=swap');
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.userDashboard {
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  margin-bottom: 5px;
+  padding: 10px;
+  top: 0;
+  z-index: 1;
+}
+
+.navigation{
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer{
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  padding: 5px;
+ 
+  background: rgb(47,46,65);
+background: linear-gradient(90deg, rgba(47,46,65,1) 0%, rgba(0,100,224,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  color: transparent;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.menulist{
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menulist-items{
+  margin: 10px;
+}
+
+.menulist-items i {
+  background-color: #0064E0;
+}
+
+button.menulist-items{
+  padding: 8px;
+  width: 150px;
+  background-color:  #0064E0;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 1px 1px #0064E0 ;
+}
+
+.menubtn, .menubtn i{
+  font: 2rem;
+  font-weight: 550;
+}
+
+.menubtn:hover{
+  background-color: #aecbf0;
+  box-shadow: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.userProfile{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0064E0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#userProfileName i{
+  margin: 5px;
+  padding: 8px;
+  border-radius:50% ;
+  font-size: larger;
+  color: white;
+}
+
+.userdropdown {
+  position: relative;
+  display: inline-block;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f55959;
+  border: #0061AF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  width: 100%;
+  color: black;
+  /* min-width: 160px; */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.userdropdown:hover .dropdown-content {display: block;}
+
+/* .userdropdown:hover .userProfile {background-color: #0064E0;} */
+
+.dropdownitems {
+  display: block;
+}
+
+/* Main display Container */
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+}
+
+.headerContainer {
+  width: 100%;
+  height: 10%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  font-weight: 600;
+  font-style: normal;
+  
+}
+
+.headerContainer h3 {
+  background-color: #ffffff;
+  margin-left: 15px;
+}
+
+.eventsSearch {
+  width: 20%;
+  margin-left: auto;
+}
+.eventsSearch input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.mainDashboard {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  background-color: #fdfeff;
+  overflow-y: scroll;
+}
+
+
+.displayEvent {
+  width: 100%;
+}
+
+.eventsContainer {
+  width: 100%;
+  margin: 5px;
+  display: flex;
+ 
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.eventsContainer div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid #a8b6c6;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0061AF;
+  margin: 30px 25px;
+}
+
+.eventCard p{
+  margin: 15px;
+}
+.eventCard p i{
+  margin-right: 10px ;
+  background-color: #0064E0;
+  padding: 10px;
+  color: white;
+  border-radius: 35%;
+}
+/* .eventsContainer div i{
+  margin-right: 10px ;
+  background-color: #0064E0;
+  padding: 10px;
+  color: white;
+  border-radius: 35%;
+} */
+
+.eventsContainer div button {
+  width: 50%;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0061AF;
+  color: white;
+  font-size: 16px;
+  display: inline;
+  margin-top: auto;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/attendee/userDashboard.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <title>User Dashboard</title>
+</head>
+
+<body>
+  <div class="userDashboard" id="userDashBoard">
+    <div class="navbarContainer">
+      <nav class="navigation">
+        <div class="logoContainer">
+          <h1 class="logo">EventEasy</h1>
+        </div>
+        <div class="menulist">
+          <button  class="menulist-items menubtn" id="dashboardButton">Dashboard</button>
+          <div class="userdropdown">
+            <div   class="menulist-items userProfile">
+              <div class="menu-link" id="userProfileName">  </div>
+            </div>
+            <div class="dropdown-content">
+              <button   class="dropdownitems"><i class="bi bi-person-fill"></i> My Profile </button>
+              <button   class="dropdownitems"  id="logoutbtn" onclick="logoutUser()"><i class="bi bi-box-arrow-right"></i> Logout </button>
+            </div>
+          </div>
+        
+        </div>
+
+      </nav>
+    </div>
+    <div class="mainContainer">
+      <!-- Header -->
+      <div class="headerContainer" id="headerContainer">
+        <h3>Events</h3>
+        <div class="eventsSearch"><input type="search" name="eventsSearch" id="eventsSearch" placeholder="Search"></div>
+      </div>
+      <!-- Main Dashboard -->
+      <div class="mainDashboard">
+        <div class="displayEvent" id="events">
+          <div class="eventsContainer" id="eventsContainer">
+            <!-- Appointments will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../js/attendee/userDashboard.js"></script>
+
+</html>

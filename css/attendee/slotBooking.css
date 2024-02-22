@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300;400&family=Protest+Riot&family=Rubik+Burned&family=Single+Day&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slotBookingMainCointainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.backToDashboard{
+   background-color: white;
+   border: none;
+
+}
+
+.navbarContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  margin-bottom: 5px;
+  padding: 10px;
+  top: 0;
+  z-index: 1;
+}
+
+.navigation{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer{
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  font-weight: 800;
+  font-size: 36px;
+  background: rgb(47,46,65);
+background: linear-gradient(90deg, rgba(47,46,65,1) 0%, rgba(0,100,224,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  color: transparent;
+  font-style: italic;
+  padding-right: 5px;
+}
+
+.menulist{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menulist-items{
+  margin: 10px;
+}
+
+.menulist-items i {
+  background-color: #0064E0;
+}
+
+button.menulist-items{
+  padding: 8px;
+  width: 150px;
+  background-color:  #0064E0;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 1px 1px #0064E0 ;
+}
+
+.menubtn, .menubtn i{
+  font: 2rem;
+  font-weight: 550;
+}
+
+.menubtn:hover{
+  background-color: #aecbf0;
+  box-shadow: none;
+
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.scheduleTable{
+  margin: 10px;
+  margin-left: 45px;
+}
+
+.scheduleTable td, .scheduleTable th{
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+
+
+.scheduleTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.scheduleTable tr {
+    border: 1px solid gray;
+}
+
+.scheduleTable th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #0061AF;
+    color: white;
+    font-size: 12px;
+}
+
+.userProfile{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0064E0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#userProfileName i{
+  margin: 5px;
+  padding: 8px;
+  border-radius:50% ;
+  font-size: larger;
+  color: white;
+}
+
+.userdropdown {
+  position: relative;
+  display: inline-block;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  width: 100%;
+  text-align: center;
+  color: black;
+  /* min-width: 160px; */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.userdropdown:hover .dropdown-content {display: block;}
+
+/* .userdropdown:hover .userProfile {background-color: #0064E0;} */
+
+.dropdownitems {
+  display: block;
+}
+
+  
+
+.mainContainer{
+    padding: 20px;
+    width: 100vw;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+}
+
+
+  .mainDashboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #fdfeff;
+  }
+/* ---->Slot Container <------ */
+
+.displaySlot{
+    width: 100%;
+  }
+  
+.displayEventDetails{
+    width: 30%;
+    padding: 10px;
+    /* height: 100vh; */
+    float: left;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .displayEventDetails p{
+    margin: 15px;
+    margin-bottom: 20px;
+  }
+  .displayEventDetails i{
+    margin: 5px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0061AF;
+  }
+  
+  #displaySlotDetails{
+    width: 65%;
+    height: 100vh;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #displaySlotDetails .SlotPickerDate {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .SlotPickerDate input {
+    border: 1px solid gray;
+    width: 60%;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  
+  .SlotPickerDate input:hover{
+    background-color: #0061AF;
+    color: white;
+  }
+  
+  input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+  
+  .specificDaysSlot,.noOfSlotsAvailable{
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Slot Div */
+  .showEventSlots{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    
+  }
+  .showEventSlots div {
+    width: 300px;
+    border: 1PX solid gray ;
+    height: max-content;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  
+  .showEventSlots div button{
+    width: 40%;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0061AF;
+    color: white;
+    font-size: 16px;
+    display: inline;
+    
+  }
+  
+  .cancelBooking{
+    border: none;
+    margin-top: auto;
+    margin-left: auto;
+    font-size: 16px;
+    background-color: none;
+  }
+  
+  #bookSlotForm{
+    
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  
+  .selectedSlotDetails{
+    margin: 15px 0px ;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+  }
+  
+  .selectedSlotDetails p {
+    margin: 20px;
+  }
+  
+  .selectedSlotDetails i {
+    background-color:#0061AF;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  #formContainer{
+    width: 100%;
+  }
+  
+  .slotBookingForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .slotBookingForm input{
+    width: 50%;
+    border: 1px solid #0061AF;
+    margin: 10px;
+    display: inline;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .slotBookingForm #bookslotbtn{
+    width: 80px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #0061AF;
+    color: white;
+    margin: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 300px;
+  }
+
+.slotBookingContainer{
+  width: 73%;
+}
+
+
+
+#toast-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none; /* Hide initially */
+}
+
+#toast-message {
+  font-size: 16px;
+}
+
+.bookingConfirm{
+  /* background-color: #0061AF; */
+  height: 240px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(19,149,71);
+  border-radius: 5px ;
+}
+
+.tickImageContainer img{
+  width: 80px;
+  height: 80px;
+  /* background-color: #0061AF; */
+  border-radius: 50%;
+}
+
+.congratsMessageContainer{
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#congratsBtn{
+  margin: 10px;
+  width: 80px;
+  padding: 10px;
+  background-color: rgb(19,149,71);
+  border: 1px solid rgb(19,149,71);
+  color: white;
+
+}
+
+
+
+
+
+
+
+
+
+

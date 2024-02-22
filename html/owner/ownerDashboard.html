@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="../../css/owner/ownerDashboard.css">
+    <title>Owner Dashboard</title>
+</head>
+<body>
+    <div class="ownerDashboard" id="owernerDashBoard">
+        <div class="navbarContainer">
+            <nav class="navigation">
+              <div class="logoContainer">
+                <h1 class="logo">EventEasy</h1>
+              </div>
+              <div class="menulist">
+                <!-- <button  class="menulist-items menubtn" id="dashboardButton">Dashboard</button> -->
+                <div class="userdropdown">
+                  <div   class="menulist-items userProfile">
+                    <div class="menu-link" id="userProfileName">  </div>
+                  </div>
+                  <div class="dropdown-content">
+                    <button   class="dropdownitems"><i class="bi bi-person-fill"></i> My Profile </button>
+                    <button   class="dropdownitems"  id="logoutbtn" onclick="logoutUser()"><i class="bi bi-box-arrow-right"></i> Logout </button>
+                  </div>
+                </div>
+              
+              </div>
+      
+            </nav>
+          </div>
+        <!-- Main Container -->
+        <div class="mainContainer">
+          <div class="eventsMainContainer">
+            <div class="headerContainer">
+              <h2>Events</h2>
+              <div class="eventsSearch"><input type="search" name="eventsSearch" id="eventsSearch" placeholder="Search"></div>
+
+              <button class="createAppointmentBtn" onclick="eventCreation()"><i class="bi bi-plus-lg"></i> Create Event</button>
+          </div>
+          <div class="displayCreatedEvent" >
+              <div class="eventsContainer" id="eventsContainer">
+                <!-- Appointments Created will be displayed here -->
+            </div>
+      </div>
+          </div>
+            
+    </div>
+    </div>
+    <!-- Modal -->
+    <div id="deleteConfirmationModal" class="modal">
+      <div class="modal-content">
+          <div class="closeBtnContainer">
+            <button class="close"><i class="bi bi-x"></i></button>
+          </div>
+          <div class="mainContentContainer">
+            <img class="warningImage" src="../../assets/warning.svg" alt="Warning to delete">
+            <h5 class="modelMessage">Are you sure you want to delete this event?</h5>
+          <div class="actionsContainer">
+            <button class="actionBtn" id="confirmDeleteBtn">Yes, Delete</button>
+            <button class="actionBtn" id="cancelDeleteBtn">Cancel</button>
+          </div>
+          </div>
+          
+         
+      </div>
+  </div>
+    <div id="toast-container">
+      <div id="toast-message">This is a toast message</div>
+    </div>
+</body>
+<script src="../../js/owner/ownerDashboard.js"></script>
+</html>

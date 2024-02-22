@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Rubik+Burned&family=Single+Day&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.signupFormContainer{
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbarContainer{
+    font-weight: 600;
+    font-style: normal;
+    width: 100vw;
+    height: 10%;
+    display: flex;
+}
+
+.logoContainer{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+  font-weight: 800;
+  font-size: 36px;
+  background: rgb(47,46,65);
+background: linear-gradient(90deg, rgba(47,46,65,1) 0%, rgba(0,100,224,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  color: transparent;
+  font-style: italic;
+}
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logging{
+    width: 35%;
+    /* margin-top: 5px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logging button{
+    width: 40%;
+    height: 90%;
+    padding: 5px;
+    border: none;
+    background-color:  #0064E0;
+    font-size: 18px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.signupFormContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#signupForm{
+    /* width: 25%; */
+    height:max-content;
+    border: 2px solid #0064E0;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#signupForm h3{
+    /* padding: 2px; */
+    margin: 15px;
+    font: bold 1.5rem sans-serif;
+    
+}
+
+
+#signupForm div{
+    padding: 10px;
+    margin: 5px;
+}
+
+
+#signupForm input, 
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#signupForm input{
+    border: 2px solid #333;
+  background-color: white;
+  border-radius: 0.25rem;
+ padding: 5px;
+  
+}
+
+input[type="password"],
+input[type="text"],
+input[type="email"]{
+    
+  font: 1rem / 1.5 'Poppins';
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.8rem 0.95rem;
+}
+
+.large-label{
+    display: inline-block;
+    font: bold 1rem sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+ .error{
+    color: rgb(255, 0, 0);
+}
+.formGroup.error input{
+    border-color:rgb(206, 67, 67);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.formGroup.success input , .workingDays.success input{
+    border-color: #0cc477;
+}
+
+
+
+#signupForm button[type="submit"] {
+    background-color: hsl(213, 73%, 50%);
+    color: white;
+    padding: 10px;
+  }
+
+  .signupbtnContainer{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+  }
+
+  #signupBtn{
+    width: 100%;
+    padding: 5px;
+    border-radius: 25px ;
+    font-size: 18px;
+  }
+
+  #signupForm  button[type="submit"]:hover {
+    background-color: hsl(213, 73%, 40%);
+    cursor: pointer;
+  }
+
+  input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px hsl(213, 90%, 70%);
+}
+
+#signupForm button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px black;
+  }
+
+
+  #toast-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none; /* Hide initially */
+  }
+  
+  #toast-message {
+    font-size: 16px;
+  }
+  

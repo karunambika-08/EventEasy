@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../../css/attendee/slotBooking.css">
+  <title>Slot Booking</title>
+</head>
+<body>
+<div class="slotBookingMainCointainer">
+  <div class="navbarContainer">
+    <nav class="navigation">
+      <div class="logoContainer">
+        <h1 class="logo"> EventEasy</h1>
+      </div>
+      <div class="menulist">
+        <button  class="menulist-items menubtn" id="dashboardButton"> Dashboard</button>
+        <button  class="menulist-items menubtn" id="eventsBoardButton"> Events</button>
+
+        <div class="userdropdown">
+          <div   class="menulist-items userProfile">
+            <div class="menu-link" id="userProfileName">  </div>
+          </div>
+          <div class="dropdown-content">
+            <button   class="dropdownitems"><i class="bi bi-person-fill"></i> My Profile </button>
+            <button   class="dropdownitems"  id="logoutbtn" onclick="logoutUser()"><i class="bi bi-box-arrow-right"></i> Logout </button>
+          </div>
+        </div>
+      
+      </div>
+
+    </nav>
+  </div>
+  <div class="mainContainer">
+    <!-- Header -->
+    <div class="headerContainer">
+     <button class="backToDashboard"> <i class="bi bi-arrow-left"></i>Back</button>
+    </div>
+    <!-- Main Dashboard -->
+    <div class="mainDashboard">
+    
+      <!-- Slot Display -->
+      <div class="displaySlot" id="slots">
+        <div class="displayEventDetails" id="eventsDetails">
+              <!-- Event Details comes here -->
+        </div>
+        <div id="displaySlotDetails" >
+          <h3>Slot Details</h3>
+          <div class="SlotPickerDate" >
+            <input type="date" name="currentDateSlotPicker" id="currentDateSlotPicker" class="SlotPickerDate" min="" max="" placeholder="Choose a Date">
+          </div>
+          <h3 class="specificDaysSlot"></h3>
+          <h6 class="noOfSlotsAvailable"></h6>
+          <div class="showEventSlots" id="slotContainer"></div>
+        </div>
+        <div class="bookSlotForm" id="bookSlotForm" style="display: none;" >
+          <button class="cancelBooking"><i class="bi bi-x-lg"></i></button>
+          <div class="selectedSlotDetails">
+            <!-- Selected Slot Details -->
+          </div>
+          <div class="formContainer" id="formContainer">
+            <form action="" class="slotBookingForm" id="slotBookingForm">
+              <h4>Please Enter your Details</h4>
+              <label for="username">Your Name : <input type="text" name="username" id="username" class="userDetails" required placeholder="Enter your Fullname"> <br>
+              </label>
+              <label for="useremail">Your Email : &nbsp; <input type="email" name="useremail" id="useremail" class="userDetails" required placeholder="example@email.com"> <br>
+              </label>
+              <button type="submit" id="bookslotbtn">Book</button>
+            </form>
+            <div id="toast-container">
+              <div id="toast-message">This is a toast message</div>
+            </div>
+          </div>
+          <div class="bookingConfirm"  style="display: none;">
+            <div class="tickImageContainer">
+              <img src="../assets/tick.png" alt="tick" loading="lazy">
+            </div>
+            <div class="congratsMessageContainer">
+               <h3 id="congratsMessage">Your Appointment has been registered</h3>
+              <button id="congratsBtn" >Ok</button>
+            </div>
+            
+          </div>
+      </div>
+      </div>
+      </div>
+     
+
+  </div>
+ 
+</div>
+</div>
+<script defer src="../../js/attendee/slotBooking.js"></script>
+</body>
+</html>

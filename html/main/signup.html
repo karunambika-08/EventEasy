@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../../css/main/signup.css">
+</head>
+<body>
+    <div class="signupContainer">
+        <div class="navbarContainer">
+            <nav class="navigation">
+                <div class="logoContainer">
+                    <h1 class="logo">EventEasy</h1>
+                    </div>
+                    <div class="logging">
+                        <button id="signinBtn">Sign In</button>
+                        <button id="businessAccount">Business Account</button>
+                    </div>
+            </nav>
+        </div>
+
+        <div class="signupFormContainer">
+            <form action="" id="signupForm">
+                <h3 id="signupHeader">Sign Up</h3>
+                <div class="error" style="display: none;"></div>
+                <div class="userName">
+                    <label for="userName">Name</label>
+                    <input type="text" name="username" id="username" placeholder="Enter your Fullname">
+                    <div class="error" style="display: none;"></div>
+                </div>
+                <div class="userEmail">
+                    <label for="useremail">Email</label>
+                    <input type="email" name="useremail" id="useremail" placeholder="Enter your Email">
+                    <div class="error" style="display: none;"></div>
+                </div>
+                <div class="userPassword">
+                    <label for="userpassword">Password</label>
+                    <input type="password" name="userpassword" id="userpassword" placeholder="Enter your Password">
+                    <div class="error" style="display: none;"></div>
+                </div>
+                <div class="signupbtnContainer">
+                    <button id="signupBtn" type="submit">Sing Up</button>
+                </div>
+                <div class="userType">
+                    <p>Events / Business Owner? <a href="./signup.html?type=eventsOwner">Business Account Sign Up</a></p>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../../js/main/signup.js"></script>
+
+</html>

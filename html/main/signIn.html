@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../../css/main/signin.css">
+</head>
+<body>
+    <div class="signinContainer">
+        <div class="navbarContainer">
+            <nav class="navigation">
+                <div class="logoContainer">
+                    <h1 class="logo">EventEasy</h1>
+                    </div>
+                    <div class="menulist">
+                        <button  class="menulist-items menubtn" id="eventsBoardButton">Events</button>
+                        <div class="userdropdown">
+                          <div   class="menulist-items userProfile">
+                            <div class="menu-link" id="userProfileName">  </div>
+                          </div>
+                          <div class="dropdown-content">
+                            <button   class="dropdownitems"><i class="bi bi-person-fill"></i> My Profile </button>
+                            <button   class="dropdownitems"  id="logoutbtn" onclick="logoutUser()"><i class="bi bi-box-arrow-right"></i> Logout </button>
+                          </div>
+                        </div>
+                      
+                      </div>
+            </nav>
+        </div>
+
+        <div class="signinFormContainer">
+            <form action="" id="signinForm">
+                <h3 id="signinHeader">Sign In</h3>
+                <div class="error" style="display: none;"></div>
+                <div class="formGroup userEmail">
+                    <label for="useremail" class="large-label">Email</label>
+                    <input type="email" name="useremail" id="useremail" placeholder="Email" >
+                <div class="error" style="display: none;"></div>
+
+                </div>
+                <div class="userPassword">
+                    <label for="userpassword"  class="large-label">Password</label>
+                    <input type="password" name="userpassword" id="userpassword"  placeholder="Password">
+                <div class="error" style="display: none;"></div>
+                <a href="#" style="display: inline-block;">Forget Password?</a>
+                </div>
+                
+                <div class="signbtnContainer">
+                    <button type="submit" id="signinBtn">Sing In</button>
+                </div>
+                <div class="newUser">
+                   <p>New to EventEasy ? <a href="../../html/main/signup.html"> Sign Up now</a> </p>
+                </div>
+
+            </form>
+            <div id="toast-container">
+                <div id="toast-message">This is a toast message</div>
+              </div>
+        </div>
+    </div>
+</body>
+<script src="../../js/main/signin.js"></script>
+</html>

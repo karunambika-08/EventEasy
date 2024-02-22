@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/attendee/userBookedDashboard.css">
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>User Booked Dashboard</title>
+</head>
+<body>
+    <div class="userDashboard" id="userDashBoard">
+   
+        <div class="navbarContainer">
+            <nav class="navigation">
+              <div class="logoContainer">
+                <h1 class="logo"> EventEasy</h1>
+              </div>
+              <div class="menulist">
+                <button  class="menulist-items menubtn" id="eventsBoardButton">Events</button>
+                <div class="userdropdown">
+                  <div   class="menulist-items userProfile">
+                    <div class="menu-link" id="userProfileName">  </div>
+                  </div>
+                  <div class="dropdown-content">
+                    <button   class="dropdownitems"><i class="bi bi-person-fill"></i> My Profile </button>
+                    <button   class="dropdownitems"  id="logoutbtn" onclick="logoutUser()"><i class="bi bi-box-arrow-right"></i> Logout </button>
+                  </div>
+                </div>
+              
+              </div>
+      
+            </nav>
+          </div>
+          <div class="mainContainer">
+            <div class="headerContainer" id="headerContainer">
+              <h4 class="">Your Appointments</h4>
+            </div>
+            <!-- Main Dashboard -->
+            <div class="mainDashboard">
+              <div class="bookedAppointmentsContainer">
+                  <!-- Booked Appointment will be shown here -->
+                  <table id="bookedAppointmentsTable">
+                    <h5>Upcoming Appointments</h5>
+                      <thead>
+                          <tr>
+                              <th>S.No</th>
+                              <th>Appointment</th>
+                              <th>Appointment Date</th>
+                              <th>Appointment Time</th>
+                              <th>Action</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          
+                      </tbody>
+                  </table>
+      
+                  
+                 <div id="pastAppointmentsContainer"></div>
+              </div>
+            </div>
+          </div>
+     
+      </div>
+      </div>
+      <script defer src="../../js/attendee/userBookedDashboard.js"></script>
+</body>
+</html>
